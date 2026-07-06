@@ -1,5 +1,5 @@
 package lab_ordenacao;
-
+import java.util.Arrays;
 public class Ordenacao implements Ordenacao_IF{
 
 	public boolean checaVetorOrdenado(Pessoa[] pessoas) { //Método brinde pra ajudar a testar os algoritmos implementados
