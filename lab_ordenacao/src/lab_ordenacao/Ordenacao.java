@@ -20,7 +20,7 @@ public class Ordenacao implements Ordenacao_IF{
 		System.out.println(pessoas);
 		int size = pessoas.length;
 		for(int i = 0; i < size-1-i; i++) {
-			for(int j = 0; j < size-1;){
+			for(int j = 0; j < size-1;j++){
 				if(pessoas[j].compareTo(pessoas[j+1]) > 0) {
 					Pessoa aux = pessoas[j];
 					pessoas[j] = pessoas[j+1];
