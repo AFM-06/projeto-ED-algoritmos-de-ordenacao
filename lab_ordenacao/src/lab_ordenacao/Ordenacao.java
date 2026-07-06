@@ -28,7 +28,7 @@ public class Ordenacao implements Ordenacao_IF{
 				}
 			}
 		}
-		System.out.println(pessoas);
+		System.out.println(Arrays.toString(pessoas));
 	}
 
 	@Override
