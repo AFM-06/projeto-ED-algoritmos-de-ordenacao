@@ -48,7 +48,7 @@ public class Ordenacao implements Ordenacao_IF{
 				pessoas[indice_menor] = aux;
 			}
 		}
-		System.out.println(pessoas);
+		System.out.println(Arrays.toString(pessoas));
 	}
 
 	@Override
