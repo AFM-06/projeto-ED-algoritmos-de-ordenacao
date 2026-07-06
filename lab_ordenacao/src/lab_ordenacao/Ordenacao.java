@@ -17,7 +17,7 @@ public class Ordenacao implements Ordenacao_IF{
 
 	@Override
 	public void bubbleSort(Pessoa[] pessoas) {
-		System.out.println(pessoas);
+		System.out.println(Arrays.toString(pessoas));
 		int size = pessoas.length;
 		for(int i = 0; i < size-1; i++) {
 			for(int j = 0; j < size - 1 - i;j++){
