@@ -33,8 +33,22 @@ public class Ordenacao implements Ordenacao_IF{
 
 	@Override
 	public void selectionSort(Pessoa[] pessoas) {
-		// TODO Auto-generated method stub
-		
+		System.out.println(pessoas);
+		int size = pessoas.length;
+		for(int i = 0; i < size-1; i++) {
+			int indice_menor =  i;
+			for(int j = i+1; j < size; j++) {
+				if(pessoas[j].compareTo(pessoas[indice_menor]) < 0) {
+					indice_menor = j;
+				}
+			}
+			if(indice_menor != i) {
+				Pessoa aux = pessoas[i];
+				pessoas[i] = pessoas[indice_menor];
+				pessoas[indice_menor] = aux;
+			}
+		}
+		System.out.println(pessoas);
 	}
 
 	@Override
