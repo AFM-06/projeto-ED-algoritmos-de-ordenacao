@@ -53,8 +53,18 @@ public class Ordenacao implements Ordenacao_IF{
 
 	@Override
 	public void insertionSort(Pessoa[] pessoas) {
-		// TODO Auto-generated method stub
-		
+		System.out.println(Arrays.toString(pessoas));
+		int size = pessoas.length;
+		for(int i = 1; i < size; i++) {
+			int j = i;
+			while(j>0 && pessoas[j-1].compareTo(pessoas[j]) > 0) {
+				Pessoa aux = pessoas[j];
+				pessoas[j] = pessoas[j-1];
+				pessoas[j-1] = aux;
+				pessoas[j] = pessoas[j-1];
+			}
+		}
+		System.out.println(Arrays.toString(pessoas));
 	}
 
 	@Override
