@@ -69,7 +69,11 @@ public class Ordenacao implements Ordenacao_IF{
 
 	@Override
 	public void mergeSort(Pessoa[] pessoas) {
-		// TODO Auto-generated method stub
+		System.out.println(Arrays.toString(pessoas));
+		if (pessoas.length > 1) {
+			mergeSortHelper(pessoas, 0, pessoas.length - 1);
+		}
+		System.out.println(Arrays.toString(pessoas));
 		
 	}
 	private void mergeSortHelper(Pessoa[] pessoas, int head, int tail){
