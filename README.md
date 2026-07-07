@@ -1,6 +1,7 @@
 ## Projeto de implementação: algoritmos de ordenação
+
 # Roteiro
---
+
 Para esta atividade, vocês irão implementar em Java, uma classe ordenadora chamada
 Ordenação. Esta classe irá prover funções que implementam os algoritmos de ordenação
 que vimos em sala de aula.
