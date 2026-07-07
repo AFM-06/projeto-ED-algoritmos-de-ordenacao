@@ -72,4 +72,33 @@ public class Ordenacao implements Ordenacao_IF{
 		// TODO Auto-generated method stub
 		
 	}
+	private void merge(Pessoa[] pessoas,int head,int middle, int tail) {
+		Pessoa[] temp = new Pessoa[tail - head + 1];
+		int leftIndex  = head;
+		int rightIndex = middle + 1;
+		int tempIndex  = 0;
+		while (leftIndex <= middle && rightIndex <= tail) {
+			if (pessoas[leftIndex].compareTo(pessoas[rightIndex]) <= 0) {
+				temp[tempIndex] = pessoas[leftIndex];
+				leftIndex++;
+			} else {
+				temp[tempIndex] = pessoas[rightIndex];
+				rightIndex++;
+			}
+			tempIndex++;
+		}
+		while (leftIndex <= middle) {
+			temp[tempIndex] = pessoas[leftIndex];
+			leftIndex++;
+			tempIndex++;
+		}
+		while (rightIndex <= tail) {
+			temp[tempIndex] = pessoas[rightIndex];
+			rightIndex++;
+			tempIndex++;
+		}
+		for (int position = head; position <= tail; position++) {
+			pessoas[position] = temp[position - head];
+		}
+	}
 }
