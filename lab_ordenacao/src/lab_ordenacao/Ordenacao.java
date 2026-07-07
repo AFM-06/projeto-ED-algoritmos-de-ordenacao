@@ -72,6 +72,14 @@ public class Ordenacao implements Ordenacao_IF{
 		// TODO Auto-generated method stub
 		
 	}
+	private void mergeSortHelper(Pessoa[] pessoas, int head, int tail){
+		if (head < tail) {
+			int middle = (head + tail) / 2;
+			mergeSortHelper(pessoas, head, middle);
+			mergeSortHelper(pessoas, middle + 1, tail);
+			merge(pessoas, head, middle, tail);
+		}
+	}
 	private void merge(Pessoa[] pessoas,int head,int middle, int tail) {
 		Pessoa[] temp = new Pessoa[tail - head + 1];
 		int leftIndex  = head;
