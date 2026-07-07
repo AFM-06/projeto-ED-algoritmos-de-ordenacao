@@ -61,7 +61,7 @@ public class Ordenacao implements Ordenacao_IF{
 				Pessoa aux = pessoas[j];
 				pessoas[j] = pessoas[j-1];
 				pessoas[j-1] = aux;
-				pessoas[j] = pessoas[j-1];
+				j--;
 			}
 		}
 		System.out.println(Arrays.toString(pessoas));
