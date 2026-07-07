@@ -11,6 +11,8 @@ public class Main {
 
         Ordenacao ordenacao = new Ordenacao();
         //ordenacao.bubbleSort(pessoas);
-        ordenacao.selectionSort(pessoas);
+        //ordenacao.selectionSort(pessoas);
+        //ordenacao.selectionSort(pessoas);
+        ordenacao.mergeSort(pessoas);
     }
 }
